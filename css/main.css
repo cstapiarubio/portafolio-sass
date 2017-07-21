@@ -6779,20 +6779,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: transparent; }
   .nav-dos li:hover {
     background-color: transparent; }
-    .nav-dos li:hover a:hover {
-      color: #fff; }
 
 #bordeDerecho {
   border-right: 1px solid #aaa; }
 
-.seccion_dos {
+#home-uno {
   padding: 2%;
   color: #989998;
   text-align: center;
   line-height: 30px;
   padding-top: 6%; }
-  .seccion_dos h1, .seccion_dos h3 {
-    color: #fff;
+  #home-uno h1, #home-uno h3 {
     text-align: center; }
 
 .seccion_tres {
@@ -6939,8 +6936,5 @@ h1 {
 
 .slide:nth-child(2) {
   background-image: url(http://conversationsabouther.net/wp-content/uploads/2015/03/1-seoul-fashion-week-fall-2015-street-style-45.jpg); }
-
-.slide:nth-child(3) {
-  background-image: url(https://dosenyc.files.wordpress.com/2015/08/eleonora-sebastiani-and-roberto-mararo.jpg); }
 
 /*# sourceMappingURL=main.css.map */

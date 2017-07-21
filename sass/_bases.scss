@@ -8,9 +8,7 @@
 	background-color: $background_nav;
 	li:hover{
 		background-color:$background_nav;
-		a:hover{
-			color: $color_text_titulo;
-		}
+		
 	}
 }
 
@@ -20,13 +18,12 @@
 }
 
 
-.seccion_dos{
+#home-uno{
 	padding:$padding_footer;
 	@include excel();
 
 	padding-top:$padding;
 	h1, h3{
-		color: $color_text_titulo;
 		text-align:$text_center;
 	}
 
@@ -197,6 +194,3 @@ h1{
 	background-image:url(http://conversationsabouther.net/wp-content/uploads/2015/03/1-seoul-fashion-week-fall-2015-street-style-45.jpg);
 }
 
-.slide:nth-child(3){
-	background-image:url(https://dosenyc.files.wordpress.com/2015/08/eleonora-sebastiani-and-roberto-mararo.jpg);
- }
