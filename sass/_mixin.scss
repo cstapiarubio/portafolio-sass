@@ -3,3 +3,31 @@
 	text-align:center;
 	line-height:30px;
 }
+
+@mixin excel(){
+	color: $color_text_p;
+	text-align:center;
+	line-height:30px;
+}
+
+@mixin condicion($icon){
+	color:($icon);
+	@if $icon==apps{
+		color: pink;
+	}
+	@else if $icon==format_list_bulleted{
+		color:blue;
+	}
+
+	@else if $icon==menu{
+		color: green;
+	}
+}
+
+
+%button{
+	background-color: #EC1153;
+	margin: 5px;
+	border-radius: 5px;
+	height: $alto;
+}

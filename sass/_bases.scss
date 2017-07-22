@@ -5,16 +5,16 @@
 
 
 .nav-dos{
-	background-color: $background_nav;
+	background-color: $background-nav;
 	li:hover{
-		background-color:$background_nav;
+		background-color:$background-li;
 		
 	}
 }
 
 
-#bordeDerecho{
-	border-right: $border-right;
+#bordeAbajo{
+	border-bottom: $border-bottom;
 }
 
 
