@@ -1,7 +1,20 @@
-/*
-carousel
- *
- */
+/* fx nav color scroll*/
+
+var myNav = document.getElementById('nav-dos');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
+
+
+/* fx carousel*/
 ;(function(factory){
   
   if (typeof define === 'function' && define.amd) {
@@ -12,22 +25,16 @@ carousel
       factory(jQuery);
   }
 
-})(function($){
+})
+
+(function($){
   
-  /*
-	 * We define Zippy as a variable of type ‘function’. 
-   * Here, we use an anonymous function to ensure 
-   * that the logic inside the function is executed immediately. 
-	 *
-	 */
+
   var Zippy = (function(element, settings){
     
     var instanceUid = 0;
     
-    /*
-     * The constructor function for Zippy
-     *
-     */
+    /*The constructor function for Zippy*/
     function _Zippy(element, settings){
       this.defaults = {
         slideDuration: '3000',
@@ -36,11 +43,9 @@ carousel
         arrowLeft: '.arrow-left'
       };
       
-      // We create a new property to hold our default settings after they
-      // have been merged with user supplied settings
       this.settings = $.extend({},this,this.defaults,settings);
       
-      // This object holds values that will change as the plugin operates
+     
       this.initials = {
         currSlide : 0,
         $currSlide: null,
@@ -48,36 +53,25 @@ carousel
         csstransitions: false
       };
       
-      // Attaches the properties of this.initials as direct properties of Zippy
+  
       $.extend(this,this.initials);
       
-      // Here we'll hold a reference to the DOM element passed in
-      // by the $.each function when this plugin was instantiated
+   
       this.$el = $(element);
       
-      // Ensure that the value of 'this' always references Zippy
+
       this.changeSlide = $.proxy(this.changeSlide,this);
-      
-      // We'll call our initiator function to get things rolling!
+  
       this.init();
       
-      // A little bit of metadata about the instantiated object
-      // This property will be incremented everytime a new Zippy carousel is created
-		 // It provides each carousel with a unique ID
+    
       this.instanceUid = instanceUid++;
     }
     
     return _Zippy;
   
   })();
-  
-  /**
-	 * Called once per instance
-	 * Calls starter methods and associate the '.zippy-carousel' class
-	 * @params void
-	 * @returns void
-	 *
-	 */
+ 
    Zippy.prototype.init = function(){
     //Test to see if cssanimations are available
     this.csstransitionsTest();
@@ -94,14 +88,7 @@ carousel
     this.initTimer();
   };
 	
-	/**
-	 * Appropriated out of Modernizr v2.8.3
-	 * Creates a new DOM element and tests existence of properties on it's
-	 * Style object to see if CSSTransitions are available
-	 * @params void
-	 * @returns void
-	 *
-	 */
+	
 	Zippy.prototype.csstransitionsTest = function(){
 		var elem = document.createElement('modernizr');
 		//A list of properties to test for
@@ -117,27 +104,13 @@ carousel
 		} 
 	};
 	
-	/**
-	 * Add the CSSTransition duration to the DOM Object's Style property
-	 * We trigger this function just before we want the slides to animate
-	 * @params void
-	 * @returns void
-	 *
-	 */
 	Zippy.prototype.addCSSDuration = function(){
 		var _ = this;
 		this.$el.find('.slide').each(function(){
 			this.style[_.csstransitions+'Duration'] = _.settings.speed+'ms';
 		});
 	}
-	
-	/**
-   * Remove the CSSTransition duration from the DOM Object's style property
-   * We trigger this function just after the slides have animated
-   * @params void
-   * @returns void
-   *
-   */
+
 	Zippy.prototype.removeCSSDuration = function(){
 		var _ = this;
 		this.$el.find('.slide').each(function(){
@@ -145,37 +118,19 @@ carousel
 		});
 	}
 	
-	/**
-	 * Creates a list of indicators based on the amount of slides
-	 * @params void
-	 * @returns void
-	 *
-	 */ 
 	Zippy.prototype.build = function(){
 		var $indicators = this.$el.append('<ul class="indicators" >').find('.indicators');
 		this.totalSlides = this.$el.find('.slide').length;
 		for(var i = 0; i < this.totalSlides; i++) $indicators.append('<li data-index='+i+'>');
 	};
 	
-	/**
-	 * Activates the first slide
-	 * Activates the first indicator
-	 * @params void
-	 * @returns void
-	 *
-	 */ 
+
 	Zippy.prototype.activate = function(){
 		this.$currSlide = this.$el.find('.slide').eq(0);
 		this.$el.find('.indicators li').eq(0).addClass('active');
 	};
 	
-	/**
-   * Associate event handlers to events
-   * For arrow events, we send the placement of the next slide to the handler
-   * @params void
-   * @returns void
-   *
-   */
+
 	Zippy.prototype.events = function(){
 		$('body')
 			.on('click',this.settings.arrowRight,{direction:'right'},this.changeSlide)
@@ -183,48 +138,21 @@ carousel
 			.on('click','.indicators li',this.changeSlide);
 	};
 	
-	/**
-	 * TIMER
-	 * Resets the timer
-	 * @params void
-	 * @returns void
-	 *
-	 */
+	
 	Zippy.prototype.clearTimer = function(){
 		if (this.timer) clearInterval(this.timer);
 	};
 	
-	/**
-	 * TIMER
-	 * Initialise the timer
-	 * @params void
-	 * @returns void
-	 *
-	 */
+	
 	Zippy.prototype.initTimer = function(){
 		this.timer = setInterval(this.changeSlide, this.settings.slideDuration);
 	};
 	
-	/**
-	 * TIMER
-	 * Start the timer
-	 * Reset the throttle to allow changeSlide to be executable
-	 * @params void
-	 * @returns void
-	 *
-	 */
 	Zippy.prototype.startTimer = function(){
 		this.initTimer();
 		this.throttle = false;
 	};
 	
-	/**
-	 * MAIN LOGIC HANDLER
-	 * Triggers a set of subfunctions to carry out the animation
-	 * @params	object	event
-	 * @returns void
-	 *
-	 */
 	Zippy.prototype.changeSlide = function(e){
 		//Ensure that animations are triggered one at a time
 		if (this.throttle) return;
@@ -250,12 +178,7 @@ carousel
 		}
 	};
 	
-	/**
-	 * Returns the animation direction, right or left
-	 * @params	object	event
-	 * @returns strong	animation direction
-	 *
-	 */
+	
 	Zippy.prototype._direction = function(e){
 		var direction;
 		
@@ -268,13 +191,7 @@ carousel
 		return direction;
 	};
 	
-	/**
-	 * Updates our plugin with the next slide number
-	 * @params	object	event
-	 * @params	string	animation direction
-	 * @returns boolean continue to animate?
-	 *
-	 */
+	
 	Zippy.prototype._next = function(e,direction){
 		
     // If the event was triggered by a slide indicator, we store the data-index value of that indicator
@@ -306,13 +223,7 @@ carousel
 		return true;
 	};
 	
-	/**
-	 * Executes the animation via CSS transitions
-	 * @params	object	Jquery object the next slide to slide into view
-	 * @params	string	animation direction
-	 * @returns void
-	 *
-	 */
+	
 	Zippy.prototype._cssAnimation = function($nextSlide,direction){
     //Init CSS transitions
 		setTimeout(function(){
@@ -321,10 +232,7 @@ carousel
 			this.$currSlide.addClass('shift-'+direction);
 		}.bind(this),100);
 		
-		//CSS Animation Callback
-		//After the animation has played out, remove CSS transitions
-		//Remove unnecessary classes
-		//Start timer
+		
 		setTimeout(function(){
 			this.$el.removeClass('transition');
 			this.removeCSSDuration();
@@ -335,13 +243,7 @@ carousel
 		}.bind(this),100 + this.settings.speed);
 	};
 	
-	/**
-	 * Executes the animation via JS transitions
-	 * @params	object	Jquery object the next slide to slide into view
-	 * @params	string	animation direction
-	 * @returns void
-	 *
-	 */
+	
 	Zippy.prototype._jsAnimation = function($nextSlide,direction){
 		//Cache this reference for use inside animate functions
 		var _ = this;
@@ -369,22 +271,12 @@ carousel
 		});
 	};
 	
-  /**
-	 * Ensures the slide indicators are pointing to the currently active slide
-	 * @params	void
-	 * @returns	void
-	 *
-	 */
+ 
 	Zippy.prototype._updateIndicators = function(){
 		this.$el.find('.indicators li').removeClass('active').eq(this.currSlide).addClass('active');
 	};
 	
-	/**
-	 * Initialize the plugin once for each DOM object passed to jQuery
-	 * @params	object	options object
-	 * @returns void
-	 *
-	 */
+	
 	$.fn.Zippy = function(options){
     
     return this.each(function(index,el){
