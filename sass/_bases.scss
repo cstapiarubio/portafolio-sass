@@ -3,6 +3,9 @@
 }
 
 
+#boton{
+	@include button();
+}
 
 .nav-dos{
 	background-color: $background-nav;
@@ -20,7 +23,6 @@
 
 #home-uno{
 	padding:$padding_footer;
-	@include excel();
 
 	padding-top:$padding;
 	h1, h3{
@@ -38,9 +40,6 @@
 	}
 	h1, h2, h4{
 		text-align:$text_center;
-	}
-	p{
-		@include excel();
 	}
 }
 

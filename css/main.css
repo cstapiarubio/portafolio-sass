@@ -6775,8 +6775,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 * {
   font-family: "Raleway", sans-serif; }
 
+#boton {
+  background-color: #EC1153;
+  border-radius: 5px;
+  height: 60px;
+  color: #ffffff;
+  width: 200px;
+  font-size: 15px; }
+
 .nav-dos {
-  background-color: #000; }
+  background-color: #ffffff; }
   .nav-dos li:hover {
     background-color: #FAF8F2; }
 
@@ -6785,9 +6793,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 #home-uno {
   padding: 2%;
-  color: #989998;
-  text-align: center;
-  line-height: 30px;
   padding-top: 6%; }
   #home-uno h1, #home-uno h3 {
     text-align: center; }
@@ -6799,14 +6804,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     padding: 6%; }
   .seccion_tres h1, .seccion_tres h2, .seccion_tres h4 {
     text-align: center; }
-  .seccion_tres p {
-    color: #989998;
-    text-align: center;
-    line-height: 30px; }
 
 @media (max-width: 600px) {
   .seccion_uno {
-    background-color: #000;
+    background-color: #ffffff;
     padding-top: 11%; } }
 /*carousel*/
 .wrapper {
