@@ -2,17 +2,78 @@
 	font-family: $body_font;
 }
 
+#principal{
+	background-color: $gris-oscuro;
+}
+
+#home{
+	background-color: $background-nav;
+	border-radius: $radius;
+}
+
+/*botones*/
 
 #boton{
 	@include button();
 }
 
-.nav-dos{
-	background-color: $background-nav;
-	li:hover{
-		background-color:$background-li;
-		
-	}
+/*diseño seccion home*/
+
+#col{
+	border-radius: $radius;
+}
+
+#col-home{
+	@include col-home();
+
+	i{
+     width: 80px;
+     align-content: center;
+     text-align:center;
+   }
+}
+
+
+/*diseño iconos home*/
+#i-resp{
+	color: #F30DE1;
+}
+
+#i-qua{
+	color: #10AFA1;
+}
+
+#i-sup{
+	color: green;
+}
+
+/*plantilla para sección who are*/
+
+#whoare{
+	background-image: url("../img/img_city.jpg");
+	background-repeat: no-repeat;                          
+	height: 900px;       
+	width: 100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:30% 95%;
+
+    img{
+	 margin-top: 30px;
+	 width: 100%;;
+	 }
+
+    h1, p{
+	color: $background-nav;
+	@extend img;
+    }
+
+    iframe{
+    width: 80%;
+    margin-left: 100px;
+    }
 }
 
 

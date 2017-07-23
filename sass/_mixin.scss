@@ -1,25 +1,41 @@
+/*plantilla botones*/
+
 @mixin button(){
-	background-color: #EC1153;
-	border-radius: $radius;
-	height: $alto;
-	color: $background-nav;
-	width: 200px;
-	font-size: 15px;
+background-color: #EC1153;
+border-radius: $radius;
+height: $alto;
+color: $background-nav;
+width: 190px;
+font-size: 15px;
 }
 
+/*plantilla para seccion home*/
+
+@mixin col-home(){
+background-color: $background-nav;
+
+  h5{
+  color: $p-negro;
+  text-align: center;
+ }
+
+  p{
+  color: $gris-oscuro;
+  }
+}
 
 @mixin condicion($icon){
-	color:($icon);
-	@if $icon==apps{
-		color: pink;
-	}
-	@else if $icon==format_list_bulleted{
-		color:blue;
-	}
+color:($icon);
+@if $icon==apps{
+color: pink;
+}
+@else if $icon==format_list_bulleted{
+color:blue;
+}
 
-	@else if $icon==menu{
-		color: green;
-	}
+@else if $icon==menu{
+color: green;
+}
 }
 
 

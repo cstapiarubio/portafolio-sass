@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -1751,7 +1752,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-img {
+img, #whoare h1, #whoare p {
   border: 0; }
 
 /**
@@ -2032,7 +2033,7 @@ i {
   i.large {
     font-size: 6rem; }
 
-img.responsive-img,
+img.responsive-img, #whoare h1.responsive-img, #whoare p.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto; }
@@ -2108,7 +2109,7 @@ video.responsive-video {
     right: 0;
     bottom: 0;
     z-index: -1; }
-    .parallax-container .parallax img {
+    .parallax-container .parallax img, .parallax-container .parallax #whoare h1, #whoare .parallax-container .parallax h1, .parallax-container .parallax #whoare p, #whoare .parallax-container .parallax p {
       display: none;
       position: absolute;
       left: 50%;
@@ -3423,11 +3424,11 @@ small {
       height: 100%;
       max-height: none;
       overflow: visible; }
-      .card.horizontal.small .card-image img, .card.horizontal.medium .card-image img, .card.horizontal.large .card-image img {
+      .card.horizontal.small .card-image img, .card.horizontal.small .card-image #whoare h1, #whoare .card.horizontal.small .card-image h1, .card.horizontal.small .card-image #whoare p, #whoare .card.horizontal.small .card-image p, .card.horizontal.medium .card-image img, .card.horizontal.medium .card-image #whoare h1, #whoare .card.horizontal.medium .card-image h1, .card.horizontal.medium .card-image #whoare p, #whoare .card.horizontal.medium .card-image p, .card.horizontal.large .card-image img, .card.horizontal.large .card-image #whoare h1, #whoare .card.horizontal.large .card-image h1, .card.horizontal.large .card-image #whoare p, #whoare .card.horizontal.large .card-image p {
         height: 100%; }
     .card.horizontal .card-image {
       max-width: 50%; }
-      .card.horizontal .card-image img {
+      .card.horizontal .card-image img, .card.horizontal .card-image #whoare h1, #whoare .card.horizontal .card-image h1, .card.horizontal .card-image #whoare p, #whoare .card.horizontal .card-image p {
         border-radius: 2px 0 0 2px;
         max-width: 100%;
         width: auto; }
@@ -3445,7 +3446,7 @@ small {
     padding-bottom: 64px; }
   .card .card-image {
     position: relative; }
-    .card .card-image img {
+    .card .card-image img, .card .card-image #whoare h1, #whoare .card .card-image h1, .card .card-image #whoare p, #whoare .card .card-image p {
       display: block;
       border-radius: 2px 2px 0 0;
       position: relative;
@@ -3964,7 +3965,7 @@ button.btn-floating {
     font-size: inherit;
     text-transform: inherit;
     background: none; }
-  .waves-effect img {
+  .waves-effect img, .waves-effect #whoare h1, #whoare .waves-effect h1, .waves-effect #whoare p, #whoare .waves-effect p {
     position: relative;
     z-index: -1; }
 
@@ -4145,7 +4146,7 @@ button.btn-floating {
   background-color: #e4e4e4;
   margin-bottom: 5px;
   margin-right: 5px; }
-  .chip > img {
+  .chip > img, #whoare .chip > h1, #whoare .chip > p {
     float: left;
     margin: 0 8px 0 -12px;
     height: 32px;
@@ -4640,7 +4641,7 @@ textarea {
   position: static; }
   .autocomplete-content li .highlight {
     color: #444; }
-  .autocomplete-content li img {
+  .autocomplete-content li img, .autocomplete-content li #whoare h1, #whoare .autocomplete-content li h1, .autocomplete-content li #whoare p, #whoare .autocomplete-content li p {
     height: 40px;
     width: 40px;
     margin: 5px 15px; }
@@ -5046,7 +5047,7 @@ select:disabled {
 .prefix ~ label {
   margin-left: 3rem; }
 
-.select-dropdown li img {
+.select-dropdown li img, .select-dropdown li #whoare h1, #whoare .select-dropdown li h1, .select-dropdown li #whoare p, #whoare .select-dropdown li p {
   height: 40px;
   width: 40px;
   margin: 5px 15px;
@@ -5783,7 +5784,7 @@ input[type=range]:focus::-ms-fill-upper {
       width: 100%;
       height: inherit;
       overflow: hidden; }
-      .slider .slides li img {
+      .slider .slides li img, .slider .slides li #whoare h1, #whoare .slider .slides li h1, .slider .slides li #whoare p, #whoare .slider .slides li p {
         height: 100%;
         width: 100%;
         background-size: cover;
@@ -5858,7 +5859,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: absolute;
     top: 0;
     left: 0; }
-    .carousel .carousel-item > img {
+    .carousel .carousel-item > img, .carousel #whoare .carousel-item > h1, #whoare .carousel .carousel-item > h1, .carousel #whoare .carousel-item > p, #whoare .carousel .carousel-item > p {
       width: 100%; }
   .carousel .indicators {
     position: absolute;
@@ -6772,21 +6773,72 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+/*plantilla botones*/
+/*plantilla para seccion home*/
 * {
   font-family: "Raleway", sans-serif; }
 
+#principal {
+  background-color: #B2B0AB; }
+
+#home {
+  background-color: #ffffff;
+  border-radius: 5px; }
+
+/*botones*/
 #boton {
   background-color: #EC1153;
   border-radius: 5px;
-  height: 60px;
+  height: 40px;
   color: #ffffff;
-  width: 200px;
+  width: 190px;
   font-size: 15px; }
 
-.nav-dos {
+/*dise├▒o seccion home*/
+#col {
+  border-radius: 5px; }
+
+#col-home {
   background-color: #ffffff; }
-  .nav-dos li:hover {
-    background-color: #FAF8F2; }
+  #col-home h5 {
+    color: #000000;
+    text-align: center; }
+  #col-home p {
+    color: #B2B0AB; }
+  #col-home i {
+    width: 80px;
+    align-content: center;
+    text-align: center; }
+
+/*dise├▒o iconos home*/
+#i-resp {
+  color: #F30DE1; }
+
+#i-qua {
+  color: #10AFA1; }
+
+#i-sup {
+  color: green; }
+
+/*plantilla para secci├│n who are*/
+#whoare {
+  background-image: url("../img/img_city.jpg");
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 30% 95%; }
+  #whoare img, #whoare h1, #whoare p {
+    margin-top: 30px;
+    width: 100%; }
+  #whoare h1, #whoare p {
+    color: #ffffff; }
+  #whoare iframe {
+    width: 80%;
+    margin-left: 100px; }
 
 #bordeAbajo {
   border-bottom: 1px solid #aaa; }
