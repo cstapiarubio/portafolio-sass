@@ -105,10 +105,44 @@ h1{
 }
 
 
+/*diseño sección portfolio*/
+
+#portafolio{
+	img{
+	@include img();
+	}
+
+	background-color: $background-nav;
+
+	h1{
+		color: $p-negro;
+	    text-align: center;
+	}
+
+    p{
+		color: $gris-oscuro;
+		text-align: center;
+    }
+}
 
 
+/*diseño sección meet*/
 
+#meet{
+	@include equipo();
+	background-color: $background-nav;
 
+	h1{
+		width:100%;
+		color: $p-negro;
+	    text-align: center;
+	}
+
+    p{
+		color: $gris-oscuro;
+		text-align: center;
+    }
+}
 
 
 

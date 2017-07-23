@@ -6874,6 +6874,44 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     color: #B2B0AB;
     margin-left: 12px; }
 
+/*dise├▒o secci├│n portfolio*/
+#portafolio {
+  background-color: #ffffff; }
+  #portafolio img, #portafolio #whoare h1, #whoare #portafolio h1, #portafolio #whoare p, #whoare #portafolio p {
+    display: inline-block;
+    width: 230px;
+    height: 210px;
+    margin: auto;
+    border-radius: 5px; }
+  #portafolio h1 {
+    color: #000000;
+    text-align: center; }
+  #portafolio p {
+    color: #B2B0AB;
+    text-align: center; }
+
+/*dise├▒o secci├│n meet*/
+#meet {
+  background-color: #ffffff; }
+  #meet h5 {
+    color: #000000;
+    text-align: left; }
+  #meet h6 {
+    color: #B2B0AB;
+    text-align: left; }
+  #meet p {
+    color: #DEDBD5; }
+  #meet img, #meet #whoare h1, #whoare #meet h1, #meet #whoare p, #whoare #meet p {
+    width: 100%;
+    border-radius: 5px; }
+  #meet h1 {
+    width: 100%;
+    color: #000000;
+    text-align: center; }
+  #meet p {
+    color: #B2B0AB;
+    text-align: center; }
+
 #bordeAbajo {
   border-bottom: 1px solid #aaa; }
 

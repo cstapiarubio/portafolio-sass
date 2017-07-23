@@ -53,6 +53,36 @@
   }
 }
 
+@mixin img(){
+    display: inline-block;
+	width: 230px;
+	height: 210px;
+	margin: auto;
+	border-radius: $radius;
+}
+
+@mixin equipo(){
+	h5{
+		color: $p-negro;
+		text-align:left;
+	}
+
+	h6{
+		color: $gris-oscuro;
+		text-align:left;
+	}
+
+	p{
+		color:$gris-claro;
+	}
+
+	img{
+	width: 100%;
+	border-radius: $radius;
+	}
+}
+
+
 
 
 @mixin condicion($icon){
