@@ -1,28 +1,59 @@
 /*plantilla botones*/
 
 @mixin button(){
-background-color: #EC1153;
-border-radius: $radius;
-height: $alto;
-color: $background-nav;
-width: 190px;
-font-size: 15px;
+	background-color: $p-pink;
+	border-radius: $radius;
+	height: $alto;
+	color: $background-nav;
+	width: 190px;
+	font-size: 15px;
 }
 
 /*plantilla para seccion home*/
 
 @mixin col-home(){
-background-color: $background-nav;
+	background-color: $background-nav;
 
   h5{
-  color: $p-negro;
-  text-align: center;
+	  color: $p-negro;
+	  text-align: center;
  }
 
   p{
-  color: $gris-oscuro;
+  	color: $gris-oscuro;
   }
 }
+
+
+/*plantilla para seccion products*/
+
+@mixin productos(){
+ 	background-color: $background-nav;
+
+  h6{
+	  color: $p-pink;
+	  text-align: center;
+	  font-size: 10px;
+ }
+
+  h5{
+	  color: $p-negro;
+	  text-align: center;
+	  font-size: 15px;
+  }
+
+  p{
+      color:$gris-oscuro;
+  }
+
+  img{
+	  width: 69%;
+	  border-radius: $radius;
+	  margin-left: 29px;
+  }
+}
+
+
 
 @mixin condicion($icon){
 color:($icon);

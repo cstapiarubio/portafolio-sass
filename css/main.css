@@ -6775,6 +6775,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /*plantilla botones*/
 /*plantilla para seccion home*/
+/*plantilla para seccion products*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -6820,7 +6821,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #i-sup {
   color: green; }
 
-/*plantilla para secci├│n who are*/
+/*dise├▒o secci├│n who are*/
 #whoare {
   background-image: url("../img/img_city.jpg");
   background-repeat: no-repeat;
@@ -6839,6 +6840,39 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   #whoare iframe {
     width: 80%;
     margin-left: 100px; }
+
+/*dise├▒o secci├│n products*/
+#col-pro {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #aaa; }
+
+#products {
+  background-color: #ffffff;
+  background-color: #DEDBD5; }
+  #products h6 {
+    color: #EC1153;
+    text-align: center;
+    font-size: 10px; }
+  #products h5 {
+    color: #000000;
+    text-align: center;
+    font-size: 15px; }
+  #products p {
+    color: #B2B0AB; }
+  #products img, #products #whoare h1, #whoare #products h1, #products #whoare p, #whoare #products p {
+    width: 69%;
+    border-radius: 5px;
+    margin-left: 29px; }
+  #products h1 {
+    color: #000000;
+    text-align: center; }
+  #products p {
+    color: #B2B0AB;
+    text-align: center; }
+  #products a, #products i {
+    color: #B2B0AB;
+    margin-left: 12px; }
 
 #bordeAbajo {
   border-bottom: 1px solid #aaa; }

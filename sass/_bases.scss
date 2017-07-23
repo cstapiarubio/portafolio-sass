@@ -27,9 +27,9 @@
 	@include col-home();
 
 	i{
-     width: 80px;
-     align-content: center;
-     text-align:center;
+	     width: 80px;
+	     align-content: center;
+	     text-align:center;
    }
 }
 
@@ -47,7 +47,7 @@
 	color: green;
 }
 
-/*plantilla para sección who are*/
+/*diseño sección who are*/
 
 #whoare{
 	background-image: url("../img/img_city.jpg");
@@ -66,15 +66,51 @@
 	 }
 
     h1, p{
-	color: $background-nav;
-	@extend img;
+		color: $background-nav;
+		@extend img;
     }
 
     iframe{
-    width: 80%;
-    margin-left: 100px;
+	    width: 80%;
+	    margin-left: 100px;
     }
 }
+
+/*diseño sección products*/
+
+#col-pro{
+	background-color: $background-nav;
+	border-radius: $radius;
+    border: 1px solid #aaa;
+}
+
+#products{
+	@include productos();
+
+	background-color: $gris-claro;
+
+h1{
+	color: $p-negro;
+    text-align: center;
+}
+    p{
+		color: $gris-oscuro;
+		text-align: center;
+    }
+
+    a, i, {
+	    color: $gris-oscuro;
+	    margin-left: 12px;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 #bordeAbajo{
