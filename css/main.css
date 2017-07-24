@@ -6787,6 +6787,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 * {
   font-family: "Raleway", sans-serif; }
 
+/*esto cambia el ancho de container*/
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%; }
+
 #principal {
   background-color: #B2B0AB; }
 
@@ -6899,7 +6905,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #ffffff; }
   #portafolio img, #portafolio #whoare h1, #whoare #portafolio h1, #portafolio #whoare p, #whoare #portafolio p {
     display: inline-block;
-    width: 280px;
+    width: 350px;
     height: 250px;
     margin: 5px;
     border-radius: 5px; }
@@ -7064,7 +7070,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /*diseño sección footer*/
 #foot {
-  background-color: #DEDBD5; }
+  background-color: #4E4548; }
   #foot img, #foot #whoare h1, #whoare #foot h1, #foot #whoare p, #whoare #foot p {
     width: 100%;
     border-radius: 5px; }

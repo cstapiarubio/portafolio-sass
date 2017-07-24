@@ -2,6 +2,13 @@
 	font-family: $body_font;
 }
 
+/*esto cambia el ancho de container*/
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
 #principal{
 	background-color: $gris-oscuro;
 }
@@ -285,7 +292,7 @@ color: $background-nav;
 /*diseño sección footer*/
 
 #foot{
-	background-color: $gris-claro;
+	background-color: #4E4548;
 	@include imgfoot();
 	@include footcont();
 
