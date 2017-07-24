@@ -8,7 +8,31 @@ $(window).scroll(function() {
 
 
 /* fx carousel*/
-;(function(factory){
+
+// start carrousel
+
+   $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: false
+   });
+
+
+   // move next carousel
+   $('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+   });
+
+   // move prev carousel
+   $('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+   });
+
+
+/*;(function(factory){
   
   if (typeof define === 'function' && define.amd) {
       define(['jquery'], factory);
@@ -28,7 +52,7 @@ $(window).scroll(function() {
     var instanceUid = 0;
     
     /*The constructor function for Zippy*/
-    function _Zippy(element, settings){
+    /*function _Zippy(element, settings){
       this.defaults = {
         slideDuration: '3000',
         speed: 500,
@@ -281,14 +305,14 @@ $(window).scroll(function() {
   };
   
 
-});
+});*/
 
 // Custom options for the carousel
-var args = {
+/*var args = {
 	arrowRight : '.arrow-right', //A jQuery reference to the right arrow
 	arrowLeft : '.arrow-left', //A jQuery reference to the left arrow
 	speed : 1000, //The speed of the animation (milliseconds)
 	slideDuration : 4000 //The amount of time between animations (milliseconds)
 };
 
-$('.carousel').Zippy(args);
+$('.carousel').Zippy(args);*/
