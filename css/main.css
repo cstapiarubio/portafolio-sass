@@ -6774,12 +6774,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 /*plantilla botones*/
-/*plantilla botones*/
+/*plantilla titulos*/
 /*plantilla para seccion home*/
 /*plantilla para seccion products*/
 /*plantilla para img seccion portfolio*/
 /*plantilla para seccion equipo*/
 /*plantilla para iconos secci├│n equipo*/
+/*plantilla para secci├│n clientes*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -6884,8 +6885,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #ffffff; }
   #portafolio img, #portafolio #whoare h1, #whoare #portafolio h1, #portafolio #whoare p, #whoare #portafolio p {
     display: inline-block;
-    width: 500px;
-    height: 300px;
+    width: 310px;
+    height: 250px;
     margin: 10px;
     border-radius: 5px; }
   #portafolio h1 {
@@ -6954,10 +6955,54 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     font-weight: 900; }
 
 #col-white {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  width: 250px;
+  margin-top: 20px; }
 
-#bordeAbajo {
-  border-bottom: 1px solid #aaa; }
+/*dise├▒o secci├│n clientes*/
+#clientes h1 {
+  color: #000000;
+  text-align: center;
+  width: 100%; }
+#clientes p {
+  color: #B2B0AB;
+  text-align: center; }
+#clientes img, #clientes #whoare h1, #whoare #clientes h1, #clientes #whoare p, #whoare #clientes p {
+  width: 50%;
+  margin-left: 80px; }
+#clientes h5 {
+  color: #000000;
+  text-align: center;
+  font-size: 20px; }
+#clientes h6 {
+  color: #B2B0AB;
+  text-align: center; }
+#clientes p {
+  color: #DEDBD5; }
+
+/*dise├▒o secci├│n suscripci├│n*/
+#suscripcion {
+  background-image: url("../img/about.jpg");
+  color: #FAF8F2;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 5% 45%; }
+  #suscripcion h1 {
+    width: 100%;
+    text-align: center; }
+  #suscripcion p {
+    text-align: center; }
+  #suscripcion form {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 500px;
+    height: 80px;
+    margin-left: 200px; }
 
 #home-uno {
   padding: 2%;

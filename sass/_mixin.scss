@@ -9,7 +9,7 @@
 	font-size: 15px;
 }
 
-/*plantilla botones*/
+/*plantilla titulos*/
 
 @mixin titulos(){
 	h1{
@@ -72,8 +72,8 @@
 
 @mixin img(){
     display: inline-block;
-	width: 500px;
-	height: 300px;
+	width: 310px;
+	height: 250px;
 	margin: 10px;
 	border-radius: $radius;
 }
@@ -127,6 +127,37 @@
 @mixin github(){
 	color: $p-negro;
 }
+
+/*plantilla para sección clientes*/
+
+@mixin clientes(){
+	@include titulos();
+
+	img{
+		width: 50%;
+		margin-left: 80px;
+	}
+
+	h5{
+	color:$p-negro;
+	text-align:center;
+	font-size: 20px;
+	}
+
+	h6{
+	color:$gris-oscuro;
+	text-align:center;
+	}
+
+	p{
+	color:$gris-claro;
+	}
+}
+
+
+
+
+
 
 
 

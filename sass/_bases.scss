@@ -146,6 +146,7 @@
 
 }
 
+
 /*diseño sección planes*/
 
 #planes{
@@ -177,11 +178,49 @@
 
 #col-white{
 	background-color: $background-nav;
+	width: 250px;
+	margin-top: 20px;
 }
 
-#bordeAbajo{
-	border-bottom: $border-bottom;
+
+/*diseño sección clientes*/
+
+#clientes{
+	@include clientes();
 }
+
+
+/*diseño sección suscripción*/
+
+#suscripcion{
+	 background-image: url("../img/about.jpg");
+	 color:$background-li;
+	 background-repeat: no-repeat;                          
+	height: 300px;       
+	width: 100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:5% 45%;
+
+	h1{
+		width:100%;
+		text-align:center;
+	}
+	p{
+		text-align:center;
+	}
+
+	form{
+	background-color: $background-nav;
+	border-radius: $radius;
+	width: 500px;
+	height: 80px;
+	margin-left: 200px;
+	}
+}
+
 
 
 #home-uno{
