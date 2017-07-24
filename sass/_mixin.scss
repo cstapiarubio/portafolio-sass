@@ -155,7 +155,26 @@
 }
 
 
+/*plantilla para sección blog*/
 
+@mixin blog(){
+	img{
+		width: 100%;
+		border-radius:$radius;
+		margin-left: 1px;
+	}
+
+	h5{
+	color:$gris-oscuro;
+	font-size: 20px;
+	font-weight:bold;
+	}
+	
+	p, a{
+	color:$gris-oscuro;
+	}
+
+}
 
 
 

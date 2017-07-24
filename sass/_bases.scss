@@ -9,6 +9,7 @@
 #home{
 	background-color: $background-nav;
 	border-radius: $radius;
+	max-width:1600px;
 }
 
 /*botones*/
@@ -221,36 +222,15 @@
 	}
 }
 
+/*diseño sección blog*/
 
-
-#home-uno{
-	padding:$padding_footer;
-
-	padding-top:$padding;
-	h1, h3{
-		text-align:$text_center;
-	}
-
+#blog{
+	@include titulos();
+	@include blog();
 }
 
-.seccion_tres{
-	
-	padding:$padding_footer;
-	.desktop{
-		width:$width_desktop;
-		padding:$padding;
-	}
-	h1, h2, h4{
-		text-align:$text_center;
-	}
-}
 
-@media (max-width:600px){
-	.seccion_uno{
-		background-color:$background_nav;
-		padding-top:$padding_media;
-	}
-}
+
 
 /*carousel*/
 
