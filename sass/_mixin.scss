@@ -9,6 +9,21 @@
 	font-size: 15px;
 }
 
+/*plantilla botones*/
+
+@mixin titulos(){
+	h1{
+		color: $p-negro;
+	    text-align: center;
+	    width:100%;
+	}
+
+    p{
+		color: $gris-oscuro;
+		text-align: center;
+    }
+}
+
 /*plantilla para seccion home*/
 
 @mixin col-home(){
@@ -53,13 +68,18 @@
   }
 }
 
+/*plantilla para img seccion portfolio*/
+
 @mixin img(){
     display: inline-block;
-	width: 230px;
-	height: 210px;
-	margin: auto;
+	width: 500px;
+	height: 300px;
+	margin: 10px;
 	border-radius: $radius;
 }
+
+
+/*plantilla para seccion equipo*/
 
 @mixin equipo(){
 	h5{
@@ -81,6 +101,35 @@
 	border-radius: $radius;
 	}
 }
+
+/*plantilla para iconos sección equipo*/
+
+@mixin face(){
+	color: #040A64;
+}
+
+@mixin twiter(){
+	color: #72C1EE;
+}
+
+@mixin goopint(){
+	color: #DC3F27;
+}
+
+@mixin link(){
+	color: #3C81A9;
+}
+
+@mixin dribbble(){
+	color: $p-pink;
+}
+
+@mixin github(){
+	color: $p-negro;
+}
+
+
+
 
 
 

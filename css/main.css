@@ -6774,8 +6774,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 /*plantilla botones*/
+/*plantilla botones*/
 /*plantilla para seccion home*/
 /*plantilla para seccion products*/
+/*plantilla para img seccion portfolio*/
+/*plantilla para seccion equipo*/
+/*plantilla para iconos secci├│n equipo*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -6866,7 +6870,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-left: 29px; }
   #products h1 {
     color: #000000;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   #products p {
     color: #B2B0AB;
     text-align: center; }
@@ -6879,13 +6884,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #ffffff; }
   #portafolio img, #portafolio #whoare h1, #whoare #portafolio h1, #portafolio #whoare p, #whoare #portafolio p {
     display: inline-block;
-    width: 230px;
-    height: 210px;
-    margin: auto;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
     border-radius: 5px; }
   #portafolio h1 {
     color: #000000;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   #portafolio p {
     color: #B2B0AB;
     text-align: center; }
@@ -6905,12 +6911,50 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     width: 100%;
     border-radius: 5px; }
   #meet h1 {
-    width: 100%;
     color: #000000;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   #meet p {
     color: #B2B0AB;
     text-align: center; }
+  #meet h1 {
+    width: 100%; }
+  #meet .fa fa-google-plus,
+  #meet .fa fa-pinterest {
+    color: #DC3F27; }
+  #meet .fa fa-facebook {
+    color: #040A64; }
+  #meet .fa fa-twitter {
+    color: #72C1EE; }
+  #meet .fa fa-linkedin {
+    color: #3C81A9; }
+  #meet .fa fa-dribbble {
+    color: #EC1153; }
+  #meet .fa fa-github {
+    color: #000000; }
+
+/*dise├▒o secci├│n planes*/
+#planes {
+  background-color: #DEDBD5; }
+  #planes h1 {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    text-align: justify; }
+  #planes p {
+    color: #B2B0AB; }
+  #planes h6 {
+    p: #B2B0AB;
+    font-weight: bold;
+    text-align: center; }
+  #planes .precios,
+  #planes .line {
+    color: #000000;
+    font-weight: 900; }
+
+#col-white {
+  background-color: #ffffff; }
 
 #bordeAbajo {
   border-bottom: 1px solid #aaa; }

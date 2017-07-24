@@ -86,17 +86,8 @@
 
 #products{
 	@include productos();
-
 	background-color: $gris-claro;
-
-h1{
-	color: $p-negro;
-    text-align: center;
-}
-    p{
-		color: $gris-oscuro;
-		text-align: center;
-    }
+	@include titulos();
 
     a, i, {
 	    color: $gris-oscuro;
@@ -113,16 +104,7 @@ h1{
 	}
 
 	background-color: $background-nav;
-
-	h1{
-		color: $p-negro;
-	    text-align: center;
-	}
-
-    p{
-		color: $gris-oscuro;
-		text-align: center;
-    }
+	@include titulos();
 }
 
 
@@ -131,21 +113,71 @@ h1{
 #meet{
 	@include equipo();
 	background-color: $background-nav;
+	@include titulos();
 
 	h1{
 		width:100%;
-		color: $p-negro;
-	    text-align: center;
 	}
 
-    p{
-		color: $gris-oscuro;
-		text-align: center;
-    }
+	 .fa fa-google-plus,
+	 .fa fa-pinterest{
+		@include goopint();
+	}
+
+	.fa fa-facebook{
+		@include face();
+	}
+
+	.fa fa-twitter{
+		@include twiter();
+	}
+
+	.fa fa-linkedin{
+		@include link();
+	}
+
+	.fa fa-dribbble{
+		@include dribbble();
+	}
+
+	.fa fa-github{
+		@include github();
+	}
+
 }
 
+/*diseño sección planes*/
 
+#planes{
+	background-color: $gris-claro;
+	h1{
+	color: $p-negro;
+	font-size: 15px;
+	font-weight:bold;
+	width:100%;
+	text-align:justify;
+	}
 
+	p{
+	color:$gris-oscuro;
+	}
+
+	h6{
+		p:$gris-oscuro;
+		font-weight:bold;
+		text-align: center;
+	}
+
+	.precios, 
+	.line{
+		color:$p-negro;
+		font-weight:900;
+	}
+}
+
+#col-white{
+	background-color: $background-nav;
+}
 
 #bordeAbajo{
 	border-bottom: $border-bottom;
