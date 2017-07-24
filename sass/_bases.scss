@@ -227,6 +227,18 @@
 #blog{
 	@include titulos();
 	@include blog();
+
+	#til1{
+		color:$p-pink;
+	}
+
+	#til2{
+		color: #72C1EE;
+	}
+
+	#til3{
+		color:red;
+	}
 }
 
 

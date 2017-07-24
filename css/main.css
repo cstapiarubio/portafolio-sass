@@ -6887,9 +6887,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #ffffff; }
   #portafolio img, #portafolio #whoare h1, #whoare #portafolio h1, #portafolio #whoare p, #whoare #portafolio p {
     display: inline-block;
-    width: 310px;
+    width: 280px;
     height: 250px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 5px; }
   #portafolio h1 {
     color: #000000;
@@ -7024,6 +7024,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-weight: bold; }
 #blog p, #blog a {
   color: #B2B0AB; }
+#blog #til1 {
+  color: #EC1153; }
+#blog #til2 {
+  color: #72C1EE; }
+#blog #til3 {
+  color: red; }
 
 /*carousel*/
 .wrapper {
