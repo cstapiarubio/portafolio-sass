@@ -288,6 +288,12 @@ color: $background-nav;
 	background-color: $gris-claro;
 	@include imgfoot();
 	@include footcont();
+
+	a{
+		color: $background-nav;
+		font-size: 10px;
+		font-weight: bold;
+	}
 }
 
 
