@@ -176,26 +176,32 @@
 
 }
 
+/*plantilla para img footer*/
 
-
-
-
-
-
-
-
-@mixin condicion($icon){
-color:($icon);
-@if $icon==apps{
-color: pink;
-}
-@else if $icon==format_list_bulleted{
-color:blue;
+@mixin imgfoot(){
+	img{
+		width:100%;
+	border-radius: $radius;
+  }
 }
 
-@else if $icon==menu{
-color: green;
-}
-}
+/*plantilla para footer*/
 
+@mixin footcont(){
+
+	h5{
+		color: $background-nav;
+		width:100;
+		font-weight: bold;
+	}
+
+	p{
+		color: $gris-oscuro;
+	}
+
+	i{
+		color: $background-nav;
+		margin-top: 20px;
+	}
+}
 

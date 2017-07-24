@@ -282,8 +282,18 @@ color: $background-nav;
 }
 
 
-/*carousel*/
+/*diseño sección footer*/
 
+#foot{
+	background-color: $gris-claro;
+	@include imgfoot();
+	@include footcont();
+}
+
+
+
+
+/*carousel*/
 
 .wrapper{
   width:90%;

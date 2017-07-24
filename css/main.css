@@ -6782,6 +6782,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /*plantilla para iconos sección equipo*/
 /*plantilla para sección clientes*/
 /*plantilla para sección blog*/
+/*plantilla para img footer*/
+/*plantilla para footer*/
 * {
   font-family: "Raleway", sans-serif; }
 
@@ -7059,6 +7061,22 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   #contact form {
     background-color: #ffffff;
     border-radius: 5px; }
+
+/*diseño sección footer*/
+#foot {
+  background-color: #DEDBD5; }
+  #foot img, #foot #whoare h1, #whoare #foot h1, #foot #whoare p, #whoare #foot p {
+    width: 100%;
+    border-radius: 5px; }
+  #foot h5 {
+    color: #ffffff;
+    width: 100;
+    font-weight: bold; }
+  #foot p {
+    color: #B2B0AB; }
+  #foot i {
+    color: #ffffff;
+    margin-top: 20px; }
 
 /*carousel*/
 .wrapper {
