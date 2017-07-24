@@ -241,7 +241,31 @@
 	}
 }
 
+/*diseño sección contacto*/
 
+#contact{
+	background-image: url("../img/img_city.jpg");
+	background-color: whitesmoke;
+	background-repeat: no-repeat;                          
+	height: 600px;       
+	width: 100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:30% 95%;
+
+	h1, p, h6, i{
+		color:$background-nav;
+		width:100%;
+	}
+
+	form{
+		background-color: $background-nav;
+		border-radius: $radius;
+	}
+
+}
 
 
 /*carousel*/

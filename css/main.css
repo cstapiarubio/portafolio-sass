@@ -7031,6 +7031,25 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #blog #til3 {
   color: red; }
 
+/*diseño sección contacto*/
+#contact {
+  background-image: url("../img/img_city.jpg");
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 30% 95%; }
+  #contact h1, #contact p, #contact h6, #contact i {
+    color: #ffffff;
+    width: 100%; }
+  #contact form {
+    background-color: #ffffff;
+    border-radius: 5px; }
+
 /*carousel*/
 .wrapper {
   width: 90%;
