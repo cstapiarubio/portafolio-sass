@@ -18,6 +18,20 @@
 	@include button();
 }
 
+/*diseño nav*/
+
+#nav{
+color: $background-nav;
+}
+
+.nav-trans{
+	background-color: $background-nav !important;
+	li a, 
+	a{
+		color: $gris-oscuro;
+	}
+}
+
 /*diseño seccion home*/
 
 #col{

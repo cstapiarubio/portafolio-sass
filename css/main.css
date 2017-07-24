@@ -6802,6 +6802,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   width: 190px;
   font-size: 15px; }
 
+/*diseño nav*/
+#nav {
+  color: #ffffff; }
+
+.nav-trans {
+  background-color: #ffffff !important; }
+  .nav-trans li a,
+  .nav-trans a {
+    color: #B2B0AB; }
+
 /*diseño seccion home*/
 #col {
   border-radius: 5px; }
